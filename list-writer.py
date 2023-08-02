@@ -26,9 +26,10 @@ datas = [
 	['Samrat', '003', 'Boikali'],
 	['Fahim', '013', 'Doulatpur'],
 ]
+write_list = []
 for single_data in datas:
-	write_list = [single_data[0], single_data[1], single_data[2]]
-	write_list.append(write_list)
+	data_list = [single_data[0], single_data[1], single_data[2]]
+	write_list.append(data_list)
 	header = ['Name','ID','Address']
 	with open('test.csv', 'w') as file:
 		write = csv.writer(file)
