@@ -26,8 +26,11 @@ datas = [
 	['Samrat', '003', 'Boikali'],
 	['Fahim', '013', 'Doulatpur'],
 ]
+
 write_list = []
-for single_data in datas:
+while start_page < targeted_page:
+    datas = []
+    for single_data in datas:
 	data_list = [single_data[0], single_data[1], single_data[2]]
 	write_list.append(data_list)
 	header = ['Name','ID','Address']
